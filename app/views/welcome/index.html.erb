@@ -1,0 +1,12 @@
+<h1>Welcome To the Home Page</h1>
+
+<p>This Page is created by Johnathan Matodobra.</p>
+
+<% if user_signed_in? %>
+	<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+	<% if current_user.is_admin %>
+		<p>Is Admin</p>
+	<% end %>
+<% else %>
+	<%= link_to "Sign in", new_user_session_path %>
+<% end %>
