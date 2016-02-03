@@ -147,7 +147,7 @@ production:
      # replica set connection setup.
      # Use environment variables or a config file to keep your
      # credentials safe e.g. <%= ENV['MONGOLAB_URI'] %>.
-     uri: mongodb://matodobra24:Skateboard2.mongolab.com:55505/heroku_w42c3vzn
+     uri: mongodb://matodobra24:Skateboard2@ds055505.mongolab.com:55505/heroku_w42c3vzn
 
      options:
        # The default timeout is 5, which is the time in seconds
